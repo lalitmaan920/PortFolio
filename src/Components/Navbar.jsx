@@ -21,7 +21,7 @@ export default function Navbar() {
           <Link to="/contect" className="nav-link" >Contect</Link>
         </li>
          <li className="nav-item">
-          <a className="nav-link" href="/">Projects</a>
+          <Link to="/Projects" className="nav-link" >projects</Link>
         </li>
       </ul>
     </div>

@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './Components/About';
 import Contect from './Components/Contect';
+import ProjectCard from './Components/ProjectCard';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Layout/>}/>
           <Route path="/about" element={<About/>}/>
           <Route path="/contect" element={<Contect/>}/>
+          <Route path="/projects" element={<ProjectCard/>}/>
         </Routes>
       </Router>
    </>
