@@ -2,15 +2,15 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div class="row">
-  <div class="col-4">
+    <div className="row mt-5 pt-5">
+  <div className="col-4">
     <div id="list-example" class="list-group">
-      <a class="list-group-item list-group-item-action" href="#list-item-1">About Me</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-2">Skills</a>
-      <a class="list-group-item list-group-item-action" href="#list-item-3">Education</a>
+      <a className="list-group-item list-group-item-action" href="#list-item-1">About Me</a>
+      <a className="list-group-item list-group-item-action" href="#list-item-2">Skills</a>
+      <a className="list-group-item list-group-item-action" href="#list-item-3">Education</a>
     </div>
   </div>
-  <div class="col-8">
+  <div className="col-8">
     <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
       <h4 id="About Me">About Me</h4>
       <p>I am a final year B.Tech Electrical Engineering student at Rajasthan Technical University, Kota, with a CGPA of 8.10. Alongside my core engineering studies, I have developed strong technical skills in Python, Java, HTML, and CSS. I'm passionate about technology and software development, and I enjoy building web applications and learning new tools.

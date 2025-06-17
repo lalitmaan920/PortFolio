@@ -1,31 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Navbar() {
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => {
+    setToggle(!toggle);
+  };
+
   return (
-    <nav className="navbar bg-primary" data-bs-theme="dark">
-  <div className="container-fluid">
-    <a className="navbar-brand" href="/">Portfolio..</a>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
-        <li className="nav-item">
-          <Link to="/" className="nav-link" >Home</Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/about" className="nav-link" >About</Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/contect" className="nav-link" >Contect</Link>
-        </li>
-         <li className="nav-item">
-          <Link to="/Projects" className="nav-link" >projects</Link>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-  )
+    <nav className="navbar navbar-expand-lg bg-primary fixed-top" data-bs-theme="dark">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="/">Portfolio..</a>
+
+        {/* Navbar Toggler */}
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded={toggle ? 'true' : 'false'}
+          aria-label="Toggle navigation"
+          onClick={handleToggle}
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        {/* Collapsible Menu */}
+        <div className={`collapse navbar-collapse ${toggle ? 'show' : ''}`} id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <Link to="/" className="nav-link" onClick={handleToggle}>Home</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/about" className="nav-link" onClick={handleToggle}>About</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/contact" className="nav-link" onClick={handleToggle}>Contact</Link> {/* Fixed spelling */}
+            </li>
+            <li className="nav-item">
+              <Link to="/projects" className="nav-link" onClick={handleToggle}>Projects</Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 }

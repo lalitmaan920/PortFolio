@@ -1,7 +1,7 @@
 import React from "react";
 export default function ProjectCard() {
   return (
-    <div className="col-lg-12 text-center">
+    <div className="col-lg-12 text-center mt-5 pt-5">
       <img
         src="w3vill.png"
         alt="W3VILLA Project"
