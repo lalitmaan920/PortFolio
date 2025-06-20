@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Contect() {
   return (
-    <form className=' container-fluid col-12 mt-5 pt-5 bg-dark min-vh-100 fixed-top'>
+    <form className=' container-fluid col-12 mt-5 pt-5 bg-dark min-vh-100 '>
       <div className=' container-fluid col-6 mt-5 pt-5   border border-info rounded p-3' >
   <div className="mb-3">
     <label for="exampleInputEmail1" className="form-label text-white ">Email address</label>

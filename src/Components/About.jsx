@@ -2,7 +2,8 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className="row mt-5 pt-5 bg-dark text-white min-vh-100 fixed-top">
+    <div className="row mt-5 pt-5 bg-dark text-white min-vh-100 ">
+      
   <div className="col-3">
     <div id="list-example" class="list-group">
       <a className="list-group-item list-group-item-action bg-info text-white" href="#list-item-1">About Me</a>
@@ -31,6 +32,6 @@ I am a fast learner, team-oriented, and always eager to explore challenging oppo
            Expected Graduation: [April, 2026]</p>
     </div>
   </div>
-</div>
+  </div>
   )
 }
