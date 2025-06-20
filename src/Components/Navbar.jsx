@@ -9,9 +9,9 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-primary fixed-top" data-bs-theme="dark">
+    <nav className="navbar navbar-expand-lg bg-info fixed-top" data-bs-theme="dark">
       <div className="container-fluid">
-        <a className="navbar-brand" href="/">Portfolio..</a>
+        <a className="navbar-brand text-dark" href="/">Portfolio..</a>
 
         {/* Navbar Toggler */}
         <button
@@ -31,16 +31,16 @@ export default function Navbar() {
         <div className={`collapse navbar-collapse ${toggle ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link to="/" className="nav-link" onClick={handleToggle}>Home</Link>
+              <Link to="/" className="nav-link text-dark" onClick={handleToggle}>Home</Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-link" onClick={handleToggle}>About</Link>
+              <Link to="/about" className="nav-link text-dark" onClick={handleToggle}>About</Link>
             </li>
             <li className="nav-item">
-              <Link to="/contact" className="nav-link" onClick={handleToggle}>Contact</Link> {/* Fixed spelling */}
+              <Link to="/contact" className="nav-link text-dark" onClick={handleToggle}>Contact</Link> {/* Fixed spelling */}
             </li>
             <li className="nav-item">
-              <Link to="/projects" className="nav-link" onClick={handleToggle}>Projects</Link>
+              <Link to="/projects" className="nav-link text-dark" onClick={handleToggle}>Projects</Link>
             </li>
           </ul>
         </div>

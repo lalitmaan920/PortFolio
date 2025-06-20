@@ -2,12 +2,12 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className="row mt-5 pt-5">
-  <div className="col-4">
+    <div className="row mt-5 pt-5 bg-dark text-white min-vh-100 fixed-top">
+  <div className="col-3">
     <div id="list-example" class="list-group">
-      <a className="list-group-item list-group-item-action" href="#list-item-1">About Me</a>
-      <a className="list-group-item list-group-item-action" href="#list-item-2">Skills</a>
-      <a className="list-group-item list-group-item-action" href="#list-item-3">Education</a>
+      <a className="list-group-item list-group-item-action bg-info text-white" href="#list-item-1">About Me</a>
+      <a className="list-group-item list-group-item-action bg-info text-white" href="#list-item-2">Skills</a>
+      <a className="list-group-item list-group-item-action bg-info text-white" href="#list-item-3">Education</a>
     </div>
   </div>
   <div className="col-8">
